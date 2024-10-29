@@ -1,5 +1,5 @@
 /**
- *	A brute force approach used to search specific element in array. If the element is found return is zero-based index and display it otherwise return -1. 
+ *	A brute force approach used to search specific element in array. If the element is found return is zero-based index otherwise return -1 and display the output. 
  */ 
 import java.util.Scanner;
 public class searchElementInArray {
