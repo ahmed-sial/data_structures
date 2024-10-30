@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class findMaxElementFromArray {
+public class FindMaxElementFromArray {
 	public static void main(String[] args) {
 		System.out.print("Enter the size of array: ");
 		Scanner scanner = new Scanner(System.in);
