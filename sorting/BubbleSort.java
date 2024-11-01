@@ -2,8 +2,6 @@
  * Bubble Sort
  * Compare the adjacent elements of array, and swap the elements according to desire(ascending or descending).
  */
-import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 public class BubbleSort {
 	public static void main(String[] args) {
