@@ -36,13 +36,14 @@ public class SelectionSort {
 	}
 	// For sorting in ascending order
 	public static void selectionSort(int[] array) {
-		for (int i = 0; i < array.length - 1; i++) { //outer loop controls the total amount of steps 1 and 2 to be repeated which is one less than size of array
-			int min = i; // assume first element of unsorted array to be min.
-			for (int j = i + 1; j < array.length; j++) { // inner loop start from next element after i for comparing with array[i]
+		for (int i = 0; i < array.length - 1; i++) { 			//outer loop controls the total amount of steps 1 and 2 to be repeated which is one less than size of array
+			int min = i; 						// assume first element of unsorted array to be min.
+			for (int j = i + 1; j < array.length; j++) { 		// inner loop start from next element after i for comparing with array[i]
 				if (array[j] < array[min]) {
-					min = j; // if the current array[j] is minimum than previously assumed minimum (min = i) then update min
+					min = j; 				// if the current array[j] is minimum than previously assumed minimum (min = i) then update min
 				}
 			}
+			
 			// swapping the minimum	and first element in unsorted array
 			int temp = array[min];		
 			array[min] = array[i];
@@ -53,7 +54,7 @@ public class SelectionSort {
 	public static void selectionSort02(int[] array) {
 		for (int i = array.length - 1; i >= 0; i--) {
 			int max = i;
-			for (int j = 0; j < i; j++) { // it will be j < i not j <= i, beacause in first iteration we compare first and last in unsorted array(so no need for extra comparing).
+			for (int j = 0; j < i; j++) { 				// it will be j < i not j <= i, beacause in first iteration we compare first and last in unsorted array(so no need for extra comparing).
 				if (array[j] > array[max]) {
 					max = j;
 				}
