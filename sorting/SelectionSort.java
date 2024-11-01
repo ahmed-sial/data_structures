@@ -49,4 +49,18 @@ public class SelectionSort {
 			array[i] = temp;
 		}
 	}
+	// Different approaches
+	public static void selectionSort02(int[] array) {
+		for (int i = array.length - 1; i >= 0; i--) {
+			int max = i;
+			for (int j = 0; j < i; j++) { // it will be j < i not j <= i, beacause in first iteration we compare first and last in unsorted array(so no need for extra comparing).
+				if (array[j] > array[max]) {
+					max = j;
+				}
+			}
+			int temp = arr[i];
+	        	arr[i] = arr[max];
+	       		arr[max] = temp;
+		}
+	}
 }
