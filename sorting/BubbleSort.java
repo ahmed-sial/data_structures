@@ -21,6 +21,9 @@ public class BubbleSort {
 		System.out.println();
 		scanner.close();
 	}
+	// Ascending Order
+	// Time Complexity: O(n^2)
+	// Space Complexity: O(1)
 	public static void bubbleSort(int[] array) {
 		for (int i = 0; i < array.length - 1; i++) {			// controls the total iteration that will be n - 1 (n = length of array) 
 			boolean swapped = false;				// used to check if any swap is made. If swap is made then the array is still to be sorted else the array is sorted
