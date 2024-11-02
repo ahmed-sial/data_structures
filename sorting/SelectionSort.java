@@ -35,6 +35,9 @@ public class SelectionSort {
 		scanner.close();
 	}
 	// For sorting in ascending order
+	// Ascending Order
+	// Time Complexity: O(n^2)
+	// Space Complexity: O(1)
 	public static void selectionSort(int[] array) {
 		for (int i = 0; i < array.length - 1; i++) { 			//outer loop controls the total amount of steps 1 and 2 to be repeated which is one less than size of array
 			int min = i; 						// assume first element of unsorted array to be min.
